@@ -17,7 +17,8 @@ class ConvertToWRS:
         
         conv = ConvertToWRS()
 
-    (This will take a while to run, as it loads the shapefiles in to memory)
+    (This will take a while to run, as it loads
+    the shapefiles in to memory)
 
     2. Use the get_wrs method to do a conversion:
 
@@ -33,10 +34,12 @@ class ConvertToWRS:
 
     """
     def __init__(self, shapefile="./wrs2_descending.shp"):
-        """Create a new instance of the ConvertToWRS class, and load the shapefiles into memory.
+        """Create a new instance of the ConvertToWRS class,
+        and load the shapefiles into memory.
 
-        If it can't find the shapefile then specify the path using the shapefile keyword - but it
-        should work if the shapefile is in the same directory.
+        If it can't find the shapefile then specify the path
+        using the shapefile keyword - but it should work if the
+        shapefile is in the same directory.
         """
         self.shapefile = ogr.Open(shapefile)
         self.layer = self.shapefile.GetLayer(0)
@@ -53,10 +56,11 @@ class ConvertToWRS:
 
 
     def get_wrs(self, lat, lon):
-        """Get the Landsat WRS-2 path and row for the given latitude and longitude co-ordinates.
+        """Get the Landsat WRS-2 path and row for the given
+        latitude and longitude co-ordinates.
 
-        Returns a list of dicts, as some points will be in the overlap between two (or more)
-        landsat scene areas:
+        Returns a list of dicts, as some points will be in the
+        overlap between two (or more) landsat scene areas:
 
         [{path: 202, row: 26}, {path:186, row=7}]
         """

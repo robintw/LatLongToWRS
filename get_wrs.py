@@ -10,7 +10,8 @@ class ConvertToWRS:
 
     * OGR (in the GDAL suite)
     * Shapely
-    * Landsat WRS-2 Path/Row Shapefiles - download from USGS site (http://landsat.usgs.gov/tools_wrs-2_shapefile.php), you want wrs2_descending.zip
+    * Landsat WRS-2 Path/Row Shapefiles - download from USGS site
+     (http://landsat.usgs.gov/tools_wrs-2_shapefile.php), you want wrs2_descending.zip
 
     Usage:
 

@@ -14,3 +14,6 @@ This code finds the Landsat WRS-2 path/row which contains a given latitude/longi
 	[{'path': 201, 'row': 25}, {'path': 202, 'row': 25}]
 
 More details are available in the docstrings (try `ConvertToWRS?` or `conv.get_wrs?` in IPython) and in my original [blog post](#).
+
+# License #
+This code is released under the 3-clause BSD license (see the LICENSE file for more information).
